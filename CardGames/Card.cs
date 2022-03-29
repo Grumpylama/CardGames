@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CardGames
 {
-    internal class Card
+    public class Card
     {
-        public int Value;
-        public int Suit;
+        public int Value { get; private set; }
+
+        public int Suit { get; private set; }
 
         public Card(int value, int suit)
         {

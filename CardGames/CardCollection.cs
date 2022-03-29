@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CardGames
 {
-    interface CardCollection
+    public interface CardCollection
     {
-        List<Card> GetCards();
-        void AddCard(Card card);
-        void RemoveCard(Card card);
-        void Empty();
+        public List<Card> GetCards();
+        public void AddCard(Card card);
+        public void RemoveCard(Card card);
+        public void Empty();
         
         
         

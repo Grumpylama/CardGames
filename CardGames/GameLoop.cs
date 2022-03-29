@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace CardGames
 {
-    internal class GameLoop
+    public class GameLoop
     {
-
+        ICardGame Game;
+        public GameLoop(ICardGame game)
+        {
+            this.Game = game;
+        }
+        
+            
+        
+        
     }
 }

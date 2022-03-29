@@ -6,10 +6,37 @@ using System.Threading.Tasks;
 
 namespace CardGames
 {
-    internal class Deck
+    internal class Deck : CardCollection
     {
         private List<Card> cards;
         private Random random;
+
+        public List<Card> GetCards()
+        {
+            return cards;
+        }
+
+        public void AddCard(Card card)
+        {
+            cards.Add(card);
+        }
+        public void AddToTop(Card card)
+        {
+            cards.Insert(0, card);
+        }
+        
+        public void AddCard(int index, Card card)
+        {
+            cards.Insert(index, card);
+        }
+        public void RemoveCard(Card card)
+        {
+            cards.Remove(card);
+        }
+        public void Empty()
+        {
+            cards.Clear();
+        }
 
         public Deck()
         {
